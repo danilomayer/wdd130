@@ -2,7 +2,7 @@
 
 header {
     background-color: #8A8FAA;
-    font-family: 'Lobster', 'Sriracha', sans-serif;
+    font-family: 'Lobster', 'Sriracha';
 }
 nav a {
     text-align: center;
@@ -39,7 +39,7 @@ body {
     background-color: #282B3D;
     color: #F6E6CA;
     text-decoration: none;
-    font-family: 'Poppins', 'Roboto', Helvetica;
+    font-family: 'Poppins', 'Roboto';
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
@@ -62,12 +62,12 @@ main section img {
     background-color: #575E85;
 }
 h2 {
-    font-family: 'Lobster', 'Sriracha', sans-serif;
+    font-family: 'Lobster', 'Sriracha';
     font-size: 1.5em;
     margin: 0;
 }
 p, h4 {
-    font-family: 'Poppins', 'Roboto', Helvetica;
+    font-family: 'Poppins', 'Roboto';
     font-size: .8em;
 }
 
@@ -86,7 +86,7 @@ p, h4 {
 
 .home-title {
     color: #1B1A37;
-    font-family: 'Lobster', 'Sriracha', sans-serif;
+    font-family: 'Lobster', 'Sriracha';
     font-size: 2em;
     margin-top: 10px;
 }
