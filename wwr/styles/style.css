@@ -196,10 +196,8 @@ footer .social img {
     padding-top: 15px;
 }
 
+
 /*Page 2 RIVERS*/
-.rivers-grid {
-    
-}
 #rivers-msg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -223,35 +221,45 @@ footer .social img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    color: #575E85;
+    margin-bottom: -150px;
 }
 #salmon {
     grid-column: 1/2;
     grid-row: 1/2;
+    text-align: left;
+    padding: 35px;
 }
-.salmon-title {
-}
+
 .salmon-river {
     grid-column: 2/3;
     grid-row: 1/2;
-
+    align-self: center;
 }
 #gray {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.gray-canyon {
     grid-column: 2/3;
     grid-row: 2/3;
-
+    text-align: right;
+    padding: 35px;
+}
+.gray-canyon {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
 }
 #grand {
     grid-column: 1/2;
     grid-row: 3/4;
+    text-align: left;
+    padding: 35px;
+    justify-content: flex-start;
 }
 .grand.canyon {
     grid-column: 2/3;
     grid-row: 3/4;
+    align-self: center;
 }
+
 
 /*Media Query*/
 
