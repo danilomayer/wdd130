@@ -203,7 +203,7 @@ footer .social img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    color: #575E85;
+    color: #1B1A37;
 }
 .rivers-title{
     font-family: 'Lobster', 'Sriracha';
@@ -221,7 +221,7 @@ footer .social img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    color: #575E85;
+    color: #1B1A37;
     margin-bottom: -150px;
 }
 #salmon {
