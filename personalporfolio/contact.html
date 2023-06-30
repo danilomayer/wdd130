@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Mayer | Portfolio</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="" id="logo_link">
+                <img src="images/danilomayerlogo.png" alt="logo danilo mayer programmer" class="logo">
+            </a>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+
+        <div id="hero">
+            <div id="hero_box">
+                <img src="images/coding-computer.jpg" alt="laptop with code on the screen" id="hero_img">
+            </div>
+            <section id="hero_msg">
+                <h1 class="contact_title">CONTACT</h1>
+                <p>If you have come this far and would like to get in touch so I can help you in any way, let me know you name, email and write what you would like from me.
+                    I will be glad to answer and connect with you!</p>
+            </section>
+        </div>
+
+        <main class="home-grid">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">…
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                      <label for="mail">Email:</label>
+                      <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                      <label for="msg">Tell me what you need:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <div class="submit-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </ul>
+            </form>
+        </main>
+
+        <footer>
+            <p>Danilo Mayer &copy; 2023</p>
+            <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+            <p><a href="contact.html" target="_blank">Contact</a></p>
+            <div class="social">
+                <a href="https://github.com/danilomayer" target="_blank">
+                    <img src="images/github.png" alt="github icon">
+                </a>
+                <a href="https://www.linkedin.com/in/danilomayer/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+                <!-- need to decide if will use instagram profile on this page
+                <a href="https://www.instagram.com/danilo_mayerr/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>-->
+                <a href="https://wa.me/5542998637714" target="_blank">
+                    <img src="images/whatsapp.png" alt="whatsapp icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
