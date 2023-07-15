@@ -31,6 +31,8 @@
 * Default tag properties *
 *
 *****************************************************************/
+
+
 body {
     font-family: var(--paragraph-font);
     font-size: 20px;
@@ -94,6 +96,8 @@ a {
 * default properties for all pages *
 * *
 *****************************************************************/
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -128,6 +132,8 @@ a {
 * header area properties *
 * *
 *****************************************************************/
+
+
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -165,6 +171,8 @@ nav a:hover {
 * footer area properties *
 * *
 *****************************************************************/
+
+
 footer {
     background-color: black;
     color: var(--accent2-color);
@@ -196,6 +204,8 @@ footer p a {
 * hero properties *
 * *
 *****************************************************************/
+
+
 #hero{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
@@ -226,6 +236,7 @@ footer p a {
 * main properties (HOME PAGE)*
 * *
 *****************************************************************/
+
 
 .introduction {
     display: grid;
@@ -295,6 +306,7 @@ footer p a {
 * projects slide (PAGE 2)*
 * *
 *****************************************************************/
+
 
 .projects_layout {
     display: grid;
@@ -406,8 +418,6 @@ footer p a {
   to {opacity: 1}
 }
 
-
-
 .other_projects {
     grid-column: 2/6;
     grid-row: 4/6;
@@ -429,22 +439,59 @@ footer p a {
 *****************************************************************/
 
 
-.home-grid {}
-#feedback {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
 form {
-
+    margin: 80px auto;
+    width: 400px;
+    padding: 1.5em;
+    border: 4px solid #bbb;
+    border-radius: 1em;
 }
-li:nth-of-type(1) {
-    display: grid;
-    grid-template-columns: ;
+ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
 }
-li:nth-of-type(2) {}
-li:nth-of-type(3) {}
-#name_label {}
-#name {}
+form li + li {
+    margin-top: 1em;
+}
+label:nth-of-type(1) {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    color: #f1ebff;
+}
+#msg_label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    color: #f1ebff;
+}
 
+input, textarea {
+    font: 1em var(--paragraph-font);
+
+    width: 300px;
+    box-sizing: border-box;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.submit-button {
+    padding-left: 80px;
+}
+button {
+    margin-left: 0.8em;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-family: var(--heading-font);
+    font-size: large;
+    font-weight: 900;
+    background-color: #9999ead3;
+    border-radius: 10px;
+}
 

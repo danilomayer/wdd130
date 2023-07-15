@@ -31,26 +31,27 @@
         </div>
 
         <main class="home-grid">
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">…
-                <ul>
-                    <li>
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                      <label for="mail">Email:</label>
-                      <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                      <label for="msg">Tell me what you need:</label>
-                      <textarea id="msg" name="user_message"></textarea>
-                    </li>
+            <div id="feedback">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <label id="email_label" for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label id="msg_label" for="msg">Tell me what you need:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                    </ul>
                     <div class="submit-button">
                         <button type="submit">Submit</button>
                     </div>
-                </ul>
-            </form>
+                </form>
+            </div>
         </main>
 
         <footer>
