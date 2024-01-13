@@ -1,0 +1,113 @@
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+* {
+    padding: 1em;
+    
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2em 0;
+    background-color: yellow;
+    align-items: center;
+}
+
+.grid1 h1 {
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    background-color: violet;
+    align-items: center;
+
+}
+
+.grid2 h2 {
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    background-color: tan;
+    align-items: center;
+
+}
+
+.grid3 h3 {
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    background-color: tomato;
+    align-items: center;
+
+}
+
+.grid4 h2 {
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    background-color: blue;
+    align-items: center;
+
+}
+
+section h2 {
+}
+
+form {
+    justify-content: right;
+    padding: 1em;
+    background-color: turquoise;
+    
+}
+
+form fieldset {    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 1em;
+    align-items: center;
+
+}
+
+legend {
+
+}
+
+fieldset>div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0 1em;
+    padding: 1em;
+    
+}
+
+label {
+    
+}
+
+input {
+    justify-content: left;
+    width: 100%;
+    padding: 1em;
+
+}
+
+button {
+}
+
+
+section>div {
+}
