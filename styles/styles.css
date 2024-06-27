@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
 
     display: grid;
@@ -7,9 +13,10 @@ body {
 main {
     max-width: 840px;
     grid-column: 1/3;
+    margin: 1rem;
 }
 
-/*Navigation*/
+/* Navigation */
 header {
 
     grid-column: 1/4;
@@ -26,15 +33,17 @@ nav a {
     padding: 2rem;
 }
 
-/*Main*/
+/* Main */
 h1 {
     color: steelblue;
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
+    margin-left: 1rem;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -43,27 +52,47 @@ p {
     padding: 0;
 }
 
-/*Aside*/
+/* Aside */
 aside {
     grid-column: 3/4;
     width: 400px;
     margin: 1rem;
-    border: 1.5px solid rgba(32, 15, 13, 0.3);
-    padding: 1rem 2rem;
-    background-color: rgb(0, 0, 139);
-    color: white;
+    text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    padding: 1rem;
 }
 
-/*Footer */
+aside h2 {
+    position: absolute;
+    top: 32rem;
+    right: 9.7rem;
+    color: black;
+}
+
+/* Footer */
 footer {
     grid-column: 1/4;
     margin-top: 3rem;
     border-top: 1px dotted black;
     padding: 1rem;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 2rem 1rem;
+    border: 1.5px solid rgba(32, 15, 13, 0.3);
+    padding: 1rem 2rem;
+    background-color: rgb(0, 0, 139);
+    color: white;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
 }
