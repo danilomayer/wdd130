@@ -54,6 +54,7 @@ p {
 
 /* Aside */
 aside {
+    position: relative;
     grid-column: 3/4;
     width: 400px;
     margin: 1rem;
@@ -68,8 +69,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 32rem;
-    right: 9.7rem;
+    top: 2rem;
+    right: 7.5rem;
     color: black;
 }
 
