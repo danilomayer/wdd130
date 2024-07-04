@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&family=Sriracha&display=swap');
 
+:root {
+    --primary-color: #8A8FAA;
+    --secondary-color: var(--secondary-color);
+    --accent1-color: #dcf2f8;
+    --accent2-color: #1B1A37;
+    --accent3-color: #575E85;
+
+    --heading-font: 'Lobster', 'Sriracha';
+    --paragraph-font: 'Poppins', 'Roboto';
+
+    --nav-background-color: #282B3D;
+    --nav-link-color: var(--secondary-color);
+    --nav-hover-link-color: #282B3D;
+    --nav-hover-background-color: var(--secondary-color);
+}
+
 header {
-    background-color: #8A8FAA;
+    background-color: var(--primary-color);
     opacity: 90%;
-    font-family: 'Lobster', 'Sriracha';
+    font-family: var(--heading-font);
     display: grid;
     grid-template-columns: 150px auto;
 }
@@ -15,18 +31,18 @@ nav {
 
 nav a {
     text-align: center;
-    color: #F6E6CA;
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 35px;
 }
 
 nav a:hover {
-    background-color: #F6E6CA;
+    background-color: var(--secondary-color);
     color: #575E85;
 }
 
 body {
-    background-color: #dcf2f8;
+    background-color: var(--accent1-color);
     font-size: 22px;
     padding: 0;
     margin: 0;
@@ -62,7 +78,7 @@ body {
 #hero-msg h1,
 #hero-msg h4 {
     text-align: center;
-    color: #F6E6CA;
+    color: var(--secondary-color);
 }
 
 .button-box {
@@ -71,10 +87,10 @@ body {
 
 .book,
 .join {
-    background-color: #282B3D;
-    color: #F6E6CA;
+    background-color: var(--nav-background-color);
+    color: var(--secondary-color);
     text-decoration: none;
-    font-family: 'Poppins', 'Roboto';
+    font-family: var(--paragraph-font);
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
@@ -83,8 +99,8 @@ body {
 
 .book:hover,
 .join:hover {
-    background-color: #8A8FAA;
-    color: #282B3D;
+    background-color: var(--primary-color);
+    color: var(--nav-background-color);
 }
 
 main section {
@@ -97,39 +113,39 @@ main section img {
 
 #background {
     height: 725px;
-    background-color: #575E85;
+    background-color: var(--accent3-color);
 }
 
 h2 {
-    font-family: 'Lobster', 'Sriracha';
+    font-family: var(--heading-font);
     font-size: 1.5em;
     margin: 0;
 }
 
 p,
 h4 {
-    font-family: 'Poppins', 'Roboto';
+    font-family: var(--paragraph-font);
     font-size: .8em;
 }
 
 .msg {
-    background-color: #F6E6CA;
+    background-color: var(--secondary-color);
     line-height: 1.5em;
     padding: 35px;
 }
 
 .msg h2 {
-    color: #1B1A37;
+    color: var(--accent2-color);
 }
 
 .msg p {
-    color: #1B1A37;
+    color: var(--accent2-color);
     padding-bottom: 15px;
 }
 
 .home-title {
-    color: #1B1A37;
-    font-family: 'Lobster', 'Sriracha';
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
     font-size: 2em;
     margin-top: 10px;
 }
@@ -228,7 +244,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #F6E6CA;
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
