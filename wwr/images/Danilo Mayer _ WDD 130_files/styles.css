@@ -76,14 +76,14 @@ aside {
 }
 
 aside img {
-    width: 260px;
+    width: auto;
     height: auto;
-    padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 aside h2 {
     position: absolute;
-    top: 1.2rem;
+    top: 2rem;
     right: 4.5rem;
     color: black;
 }
