@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz Page</title>
+    <meta name="description" content="WDD 130 | Danilo Mayer | HTML & CSS Quiz Page.">
+    <meta name="author" content="Danilo Mayer">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="wwr/">Rafting Website</a>
+            <a href="wwr/site-plan-rafting.html" target="_blank">Rafting Site Plan</a>
+            <a href="www.linkedin.com/in/danilomayer" target="_blank">Linkedin</a>
+            <a href="https://www.facebook.com/danilo.mayer.79/" target="_blank">Facebook</a>
+        </nav>
+        <h1>WDD 130 | Danilo Mayer | HTML & CSS Quiz Page</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <div class="form-item column2">
+                    <label>What is CSS?<input type="text" id="fullname" name="fullname"></label>
+                </div>
+                <div class="form-item column2">
+                    <label>Email:<input type="email" id="useremail" name="useremail"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label>What is your favorite internet browser?
+                        <select name="browser" id="browser">
+                            <option value="" disabled selected></option>
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safari</option>
+                            <option value="edge">Edge</option>
+                            <option value="brave">Brave</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-item column1">
+                    <label>Do you have a household pet?
+                        <input type="checkbox" id="pet" name="pet">
+                    </label>
+                </div>
+                <label>List the places you have lived:
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy;2024 🤙 Danilo Mayer 🤙 - Parana, Brazil</p>
+    </footer>
+</body>
+<!-- last modified June 27th 2024 -->
+
+</html>

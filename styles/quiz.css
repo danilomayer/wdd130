@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+header {
+    grid-column: 1/4;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* FORM */
+body {
+    font-family: 'Poppins', 'Roboto';
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    font-family: 'Lobster', 'Sriracha';
+    margin: 2rem auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    background-color: rgb(248, 241, 227);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label {
+    text-align: right;
+    padding: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+footer {
+    display: block;
+    margin: 1.5rem auto .3rem;
+    width: 650px;
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    border-top: 1px solid black;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Footer */
+footer {
+    grid-column: 1/4;
+    margin-top: 3rem;
+    border-top: 1px dotted black;
+    padding: 1rem;
+    text-align: center;
+}
