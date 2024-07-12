@@ -117,11 +117,6 @@ h4 {
     margin-top: 10px;
 }
 
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
 .card-img,
 .mountains {
     width: 100%;
@@ -199,7 +194,7 @@ footer {
     background-color: #1B1A37;
     color: #dcf2f8;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -306,10 +301,10 @@ figure {
     margin: 0;
 }
 
-/*Page 3 CONTACT*/
+/* CONTACT */
 form {
     /* Center the form on the page */
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 400px;
     /* Form outline */
     padding: 1em;
@@ -317,84 +312,50 @@ form {
     border-radius: 1em;
 }
 
-ul {
-    list-style: none;
-    padding: 15px;
-    margin: 0;
-}
-
-form li+li {
-    margin-top: 1em;
-}
-
-label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
-
-input,
-textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
+#name,
+#email {
     font: 1em sans-serif;
-
-    /* Uniform text field size */
     width: 300px;
     box-sizing: border-box;
-
-    /* Match form field borders */
     border: 1px solid #999;
+    margin: 1rem;
+}
+
+input[type="radio"] {
+    height: 18px;
+    display: flex;
+}
+
+textarea {
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin: 2rem;
+    vertical-align: top;
+    height: 100px;
 }
 
 input:focus,
 textarea:focus {
-    /* Additional highlight for focused elements */
     border-color: #000;
 }
 
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* Provide space to type some text */
-    height: 5em;
-}
-
-.button {
-    /* Align buttons with the text fields */
-    padding-left: 90px;
-    /* same size as the label elements */
-}
-
-button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-}
-
-#feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;
-}
-
-.moveDown {
-    margin-top: 3em;
+#button {
+    display: flex;
+    margin: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 /*Media Query*/
 
 @media screen and (max-width: 900px) {
 
-    #hero,
-    .home-grid {
+    #hero {
         display: block;
         height: auto;
     }
