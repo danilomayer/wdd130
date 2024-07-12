@@ -26,39 +26,20 @@
     <main>
         <form>
             <fieldset>
-                <div class="form-item column2">
-                    <label>What is CSS?<input type="text" id="fullname" name="fullname"></label>
-                </div>
-                <div class="form-item column2">
-                    <label>Email:<input type="email" id="useremail" name="useremail"></label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Questions</legend>
-                <div class="form-item column1">
-                    <label>What is your favorite internet browser?
-                        <select name="browser" id="browser">
-                            <option value="" disabled selected></option>
-                            <option value="chrome">Chrome</option>
-                            <option value="firefox">Firefox</option>
-                            <option value="safari">Safari</option>
-                            <option value="edge">Edge</option>
-                            <option value="brave">Brave</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-item column1">
-                    <label>Do you have a household pet?
-                        <input type="checkbox" id="pet" name="pet">
-                    </label>
-                </div>
-                <label>List the places you have lived:
-                    <textarea id="feedback" name="feedback" rows="4"
-                        placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                <label>What is CSS?<input type="text" id="q1" name="q1"></label>
+                <label>Give me 5 examples of CSS rules:<input type="textarea" id="q2" name="q2"></label>
+                <label>Which of the following is a correct Python comment?
+                    <select name="q3" id="q3">
+                        <option value="" disabled selected></option>
+                        <option value="javascript"> // </option>
+                        <option value="python"> # </option>
+                        <option value="css"> /**/ </option>
+                    </select>
                 </label>
+                <label>What is the max-width breakpoint for a mobile device in media query in px?<input type="number"
+                        id="q4" name="q4"></label>
             </fieldset>
-            <button type="submit">Submit Poll</button>
+            <button type="submit">Submit Quiz</button>
         </form>
     </main>
 
