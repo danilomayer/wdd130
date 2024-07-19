@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&family=Sriracha&display=swap');
 
 :root {
-    --primary-color: #8A8FAA;
+    --primary-color: #979cbb;
     --secondary-color: var(--secondary-color);
     --accent1-color: #dcf2f8;
     --accent2-color: #1B1A37;
@@ -239,6 +239,7 @@ footer .social img {
 }
 
 #hero-msg h1 {
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     color: var(--accent1-color);
 }
