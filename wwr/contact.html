@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tide Glow | Contact Us</title>
-    <meta name="description" content="About page for my White Water rafting site called Tideglow">
+    <meta name="description"
+        content="Contact page for my White Water rafting site called Tideglow contains a form for the user to input their information and request service.">
     <meta name="author" content="Danilo Mayer">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -24,29 +25,61 @@
         </nav>
     </header>
 
-    <main>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <label>Name:<input type="text" id="name" name="name"></label>
-            <label>Email:<input type="email" id="email" name="email"></label>
+    <main id="maincontact">
+        <h1 id="contacth1">Contact Us</h1>
+        <div id="companyinfo">
+            <h2>Send us a message</h2>
+            <p>Address: Path Of The Falls Trail - Foz do Iguaçu, PR</p>
+            <p>Phone: +55 99955-4433</p>
+            <p>Email: iguazufallsrafting@tideglow.com</p>
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1171.389559690577!2d-54.437611885458765!3d-25.690843039926804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea0b10a0b82f%3A0x222948c7f3092ad8!2sLookout%20Devil&#39;s%20Throat!5e0!3m2!1sen!2sbr!4v1721737590445!5m2!1sen!2sbr"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <div id="feedback">
+            <form action="/my-handling-form-page" method="post">
+                <label>Name:<input type="text" id="name" name="name"></label>
+                <label>Email:<input type="email" id="email" name="email"></label>
 
-            <fieldset>
-                <legend>How can we help you?</legend>
-                <label>General Inquiry<input type="radio" id="general" name="general"></label>
-                <label>Reservation Question<input type="radio" id="reservation" name="reservation"></label>
-                <label>Website Suggestion<input type="radio" id="website" name="website"></label>
-            </fieldset>
-            <label>Message:<textarea id="msg" name="user_message"></textarea></label>
-            <label>Please subscribe me to the monthly newsletter:<input type="checkbox" name="subscribe"
-                    id="subscribe"></label>
-            <button type="submit" id="button">Send your message</button>
-        </form>
+                <fieldset>
+                    <legend>How can we help you?</legend>
+                    <label>General Inquiry<input type="radio" id="general" name="general"></label>
+                    <label>Reservation Question<input type="radio" id="reservation" name="reservation"></label>
+                    <label>Website Suggestion<input type="radio" id="website" name="website"></label>
+                </fieldset>
+                <label>Message:<textarea id="msg" name="user_message"></textarea></label>
+                <label>Please subscribe me to the monthly newsletter:<input type="checkbox" name="subscribe"
+                        id="subscribe"></label>
+                <button type="submit" id="button">Send your message</button>
+            </form>
+        </div>
+        <div id="employee">
+            <h2>Outstanding Staff</h2>
+            <figure><img src="images/happyemployee1.jpeg" alt="happyemployee">
+                <figcaption>Joan, our staff manager</figcaption>
+            </figure>
+            <figure><img src="images/happyemployee2.jpeg" alt="happyemployee">
+                <figcaption>Joe, the marketing specialist</figcaption>
+            </figure>
+            <figure><img src="images/happyemployee3.jpeg" alt="happyemployee">
+                <figcaption>Rita, our incredible costumer service spec</figcaption>
+            </figure>
+            <figure><img src="images/happyemployee4.jpeg" alt="happyemployee">
+                <figcaption>Amanda, our intern</figcaption>
+            </figure>
+            <figure><img src="images/happyemployee5.jpeg" alt="happyemployee">
+                <figcaption>Bruna, our CEO</figcaption>
+            </figure>
+        </div>
     </main>
 
     <footer>
         <p>Tideglow &copy; 2023 - Danilo Mayer</p>
         <p><a href="site-plan-rafting.html" target="_blank">Site Plan</a></p>
         <p><a href="contactus.html" target="_blank">Contact Us</a></p>
+        <p><a href="https://app.moqups.com/g4eP6IdCFDBYljbq64z23SbGWiWETCcO/view/page/ad64222d5"
+                target="_blank">Wireframe</a></p>
         <div class="social">
             <a href="http://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
