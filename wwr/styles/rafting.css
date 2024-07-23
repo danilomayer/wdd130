@@ -16,6 +16,8 @@
     --nav-hover-background-color: var(--secondary-color);
 }
 
+
+/*NAVIGATION*/
 header {
     background-color: var(--primary-color);
     opacity: 90%;
@@ -41,21 +43,53 @@ nav a:hover {
     color: #575E85;
 }
 
-body {
-    background-color: var(--accent1-color);
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
+#herohome {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
 }
 
-.button-box {
+#heroboxhome {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#heroimghome {
+    width: 100%;
+}
+
+#heromsghome {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    position: static;
+}
+
+#heromsghome h1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
     text-align: center;
+    color: var(--accent1-color);
+}
+
+#heromsghome h4 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--accent1-color);
 }
 
 .book,
 .join {
     background-color: var(--nav-background-color);
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     text-decoration: none;
     font-family: var(--paragraph-font);
     font-size: 18px;
@@ -63,6 +97,29 @@ body {
     margin-top: 50px;
     border-radius: 5px;
 }
+
+/*HOME CONTENT*/
+body {
+    background-color: var(--accent1-color);
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+.card-img {
+    margin: 1rem;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card
+/*ABOUT*/
 
 .book:hover,
 .join:hover {
@@ -240,6 +297,8 @@ footer .social img {
 
 #hero-msg h1 {
     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 1rem;
     text-align: center;
     color: var(--accent1-color);
 }
