@@ -111,14 +111,14 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin: 1rem;
+    margin-top: -25rem;
 }
 
 .card-img {
     margin: 1rem;
 }
 
-.card-img,
-.mountains {
+.card-img {
     width: 100%;
 }
 
@@ -144,15 +144,26 @@ body {
 }
 
 .mountains {
-    grid-column: 2/4;
-    grid-row: 5/8;
+    position: relative;
+    top: 80rem;
+    grid-column: 2/5;
+    height: 300px;
+    width: auto;
+
     box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg {
     grid-column: 5/7;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#formhome {
+    width: 20rem;
+}
+
+#formhome input {
+    width: 200px;
 }
 
 /*ABOUT*/
@@ -173,7 +184,8 @@ main section img {
 
 #background {
     height: 725px;
-    background-color: var(--accent3-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 15px;
 }
 
 h2 {
