@@ -62,12 +62,13 @@ nav a:hover {
 }
 
 #heromsghome {
+    position: relative;
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -200px;
+    bottom: 30rem;
     font-size: larger;
     z-index: 1;
 }
@@ -81,6 +82,7 @@ nav a:hover {
     margin-top: 10px;
     text-align: center;
     color: var(--accent1-color);
+    font-weight: 900;
 }
 
 .book,
@@ -453,4 +455,75 @@ textarea:focus {
 #employee figure {
     padding: 1rem;
     margin: 0 2rem;
+}
+
+
+/* TRIPS*/
+#tripmain {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#trip-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+#trip-descriptions h1 {
+    grid-column: 1/3;
+    padding: 0 1rem;
+    margin: -10rem 1rem 1rem 1rem;
+}
+
+#trip-descriptions .trip {
+    margin-bottom: 20px;
+}
+
+.tripsleft {
+    grid-column: 1/2;
+}
+
+.tripsright {
+    grid-column: 2/3;
+}
+
+.tripsfull {
+    grid-column: 1/3;
+}
+
+#trip-descriptions .trip img {
+    max-width: 100%;
+    height: 350px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+#trip-descriptions .trip h2 {
+    margin: 0 0 10px 0;
+}
+
+#available-trips {
+    padding: 10rem 1rem;
+    background-color: #e0e0e0;
+}
+
+#available-trips table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#available-trips table,
+#available-trips th,
+#available-trips td {
+    border: 1px solid #000;
+}
+
+#available-trips th,
+#available-trips td {
+    padding: 10px;
+    text-align: left;
 }

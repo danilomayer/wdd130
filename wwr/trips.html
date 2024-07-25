@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tide Glow | Trips</title>
-    <meta name="description" content="About page for my White Water rafting site called Tideglow">
+    <meta name="description" content="Trips page for my White Water rafting site called Tideglow">
     <meta name="author" content="Danilo Mayer">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -24,14 +24,98 @@
         </nav>
     </header>
 
-    <main>
+    <div id="herohome">
+        <div id="heroboxhome">
+            <img id="heroimghome" src="images/hero.png" alt="People Enjoying Rafting">
+        </div>
+        <section id="heromsghome">
+            <h1 class="hometitlehome">Everyday is Adventure Time!</h1>
+            <h4>Make Memories with Tideglow</h4>
+            <div class="buttonboxhome">
+                <a class="book" href="contact.html">Send us a message!</a>
+            </div>
+        </section>
+    </div>
+    <main id="tripmain">
+        <section id="trip-descriptions">
+            <h1>Detailed Trip Descriptions</h1>
 
+            <article class="trip tripsleft">
+                <img src="images/grand-canyon.jpg" alt="Trip 1 Photo">
+                <h2>Mountain Adventure</h2>
+                <p>Experience the thrill of mountain climbing with our expert guides. This trip includes a 5-day hike
+                    through some of the most beautiful and challenging terrains.</p>
+                <p><strong>Duration:</strong> 5 days</p>
+                <p><strong>Difficulty:</strong> Hard</p>
+            </article>
+
+            <article class="trip tripsright">
+                <img src="images/rivers.jpg" alt="Trip 2 Photo">
+                <h2>Beach Relaxation</h2>
+                <p>Relax and unwind on the pristine beaches of the Caribbean. This package includes all-inclusive resort
+                    stays, daily yoga sessions, and gourmet dining.</p>
+                <p><strong>Duration:</strong> 7 days</p>
+                <p><strong>Difficulty:</strong> Easy</p>
+            </article>
+
+            <article class="trip tripsfull">
+                <img src="images/mountains.jpg" alt="Trip 3 Photo">
+                <h2>City Exploration</h2>
+                <p>Discover the hidden gems of Europe's most iconic cities. This tour includes guided visits to
+                    historical landmarks, local cuisine tastings, and cultural experiences.</p>
+                <p><strong>Duration:</strong> 10 days</p>
+                <p><strong>Difficulty:</strong> Moderate</p>
+            </article>
+        </section>
+
+        <!-- Table of Available Trips -->
+        <section id="available-trips">
+            <h1>Available Trips</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Location</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mountain Adventure</td>
+                        <td>Rocky Mountains</td>
+                        <td>5 days</td>
+                        <td>Hard</td>
+                        <td>$1,500</td>
+                    </tr>
+                    <tr>
+                        <td>Beach Relaxation</td>
+                        <td>Caribbean</td>
+                        <td>7 days</td>
+                        <td>Easy</td>
+                        <td>$2,000</td>
+                    </tr>
+                    <tr>
+                        <td>City Exploration</td>
+                        <td>Europe</td>
+                        <td>10 days</td>
+                        <td>Moderate</td>
+                        <td>$3,500</td>
+                    </tr>
+                    <!-- Add more trips as needed -->
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
         <p>Tideglow &copy; 2023 - Danilo Mayer</p>
         <p><a href="site-plan-rafting.html" target="_blank">Site Plan</a></p>
         <p><a href="contactus.html" target="_blank">Contact Us</a></p>
+        <p><a href="https://app.moqups.com/g4eP6IdCFDBYljbq64z23SbGWiWETCcO/view/page/ad64222d5"
+                target="_blank">Wireframe</a></p>
         <div class="social">
             <a href="http://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
@@ -44,23 +128,6 @@
             </a>
         </div>
     </footer>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function (e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
 </body>
 
 </html>
